@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "2da8265b-0d74-4707-ac7e-9d6bc5800f92",
+		"name": "fullstack-backend-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fullstackbackendchallenge/api/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fullstackbackendchallenge",
+						"api",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Statistics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/fullstackbackendchallenge/api/statistics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fullstackbackendchallenge",
+						"api",
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Person 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>John-Jane Doe</name>\r\n\t<gender>t</gender>\r\n\t<age>23</age>\r\n  </person>\r\n</persons>"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fullstackbackendchallenge/api/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fullstackbackendchallenge",
+						"api",
+						"persons"
+					]
+				},
+				"description": "Adds a a XML-Payload containing persons"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Person 1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>John-Jane Doe</name>\r\n\t<gender>f</gender>\r\n\t<age>24</age>\r\n  </person>\r\n</persons>"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fullstackbackendchallenge/api/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fullstackbackendchallenge",
+						"api",
+						"persons"
+					]
+				},
+				"description": "Adds a a XML-Payload containing persons"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Person 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>John Doe Sr</name>\r\n\t<gender>m</gender>\r\n\t<age>53</age>\r\n  </person>\r\n  <person>\r\n    <name>John Doe</name>\r\n\t<gender>m</gender>\r\n\t<age>23</age>\r\n  <person>\r\n    <name>John Doe Jr</name>\r\n\t<gender>m</gender>\r\n\t<age>2</age>\r\n  </person>\r\n  </person>\r\n</persons>"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fullstackbackendchallenge/api/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fullstackbackendchallenge",
+						"api",
+						"persons"
+					]
+				},
+				"description": "Adds a a XML-Payload containing persons"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Person 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>Jane Doe Sr</name>\r\n\t<gender>f</gender>\r\n\t<age>47</age>\r\n  </person>\r\n  <person>\r\n    <name>Jane Doe</name>\r\n\t<gender>f</gender>\r\n\t<age>17</age>\r\n  </person>\r\n</persons>"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fullstackbackendchallenge/api/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fullstackbackendchallenge",
+						"api",
+						"persons"
+					]
+				},
+				"description": "Adds a a XML-Payload containing persons"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Person 4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<persons>\r\n  <person>\r\n    <name>Jane Doe Sr</name>\r\n\t<gender>f</gender>\r\n\t<age>47</age>\r\n  </person>\r\n  <person>\r\n    <name>Jane Doe</name>\r\n\t<gender>f</gender>\r\n\t<age>17</age>\r\n  </person>\r\n</persons>"
+				},
+				"url": {
+					"raw": "http://localhost:8080/fullstackbackendchallenge/api/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fullstackbackendchallenge",
+						"api",
+						"persons"
+					]
+				},
+				"description": "Adds a a XML-Payload containing persons"
+			},
+			"response": []
+		}
+	]
+}
